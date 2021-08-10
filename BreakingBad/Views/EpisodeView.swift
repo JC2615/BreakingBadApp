@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct EpisodeView: View {
+    @ObservedObject var episodeViewModel = EpisodeViewModel()
     var body: some View {
-        Text("Episodes")
+        List {
+            ForEach(episodeViewModel.episodes){ episode in
+                Text(episode.title)
+            }
+        }
+        .onAppear(){
+            episodeViewModel.fetchEpisodes()
+        }
     }
 }
 
