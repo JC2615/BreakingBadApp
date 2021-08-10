@@ -21,7 +21,7 @@ struct CharacterView: View {
                 LazyVGrid(columns: columns, content: {
                     ForEach(characterViewModel.characters){ character in
                         NavigationLink(
-                            destination: Text("Hey"),
+                            destination: CharacterDetailView(character: character),
                             label: {
                                 VStack {
                                     WebImage(url: character.img)

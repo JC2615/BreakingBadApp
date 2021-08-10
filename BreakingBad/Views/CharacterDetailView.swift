@@ -11,10 +11,23 @@ import SDWebImageSwiftUI
 struct CharacterDetailView: View {
     var character: Character
     var body: some View {
-        VStack {
-            WebImage(url: character.img)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
+        ScrollView {
+            VStack(alignment: .leading) {
+                WebImage(url: character.img)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                Text(character.name)
+                    .font(.title)
+                Text(character.nickname)
+                    .font(.title2)
+                    .foregroundColor(.secondary)
+                Spacer()
+                Text("Status")
+                    .font(.title2)
+                Text(character.status)
+                    .font(.title3)
+                    .foregroundColor(.secondary)
+            }
         }
     }
 }
