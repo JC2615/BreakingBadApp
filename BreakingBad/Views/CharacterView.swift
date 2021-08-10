@@ -25,8 +25,8 @@ struct CharacterView: View {
                                 .resizable()
                                 .indicator(.activity)
                                 .aspectRatio(contentMode: .fit)
-                                .frame(height: 200)
-                            Text(character.name)
+                                .cornerRadius(5.0)
+                            Text(character.nickname)
                         }
                     }
                 })
@@ -34,6 +34,7 @@ struct CharacterView: View {
                     characterViewModel.fetchCharacters()
                 }
             }
+            .padding()
             .navigationTitle("Characters")
         }
     }

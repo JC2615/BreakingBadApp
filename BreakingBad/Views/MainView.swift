@@ -19,6 +19,7 @@ struct MainView: View {
                     Label("Episodes", systemImage: "list.number")
                 }
         }
+        .accentColor(.pink)
     }
 }
 
