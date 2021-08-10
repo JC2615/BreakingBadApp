@@ -10,13 +10,23 @@ import SwiftUI
 struct EpisodeView: View {
     @ObservedObject var episodeViewModel = EpisodeViewModel()
     var body: some View {
-        List {
-            ForEach(episodeViewModel.episodes){ episode in
-                Text(episode.title)
+        NavigationView {
+            List {
+                ForEach(episodeViewModel.episodes){ episode in
+                    VStack(alignment: .leading) {
+                        Text("Season #\(episode.season)")
+                            .font(.title2)
+                        Text("Episode #\(episode.episode)")
+                            .font(.body)
+                        Text("\(episode.title)")
+                            .font(.body)
+                    }
+                }
             }
-        }
-        .onAppear(){
-            episodeViewModel.fetchEpisodes()
+            .navigationTitle("Episodes")
+            .onAppear(){
+                episodeViewModel.fetchEpisodes()
+            }
         }
     }
 }
