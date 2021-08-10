@@ -15,6 +15,8 @@
 		3156B5CF26C209590014C654 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156B5CE26C209590014C654 /* MainView.swift */; };
 		3156B5D126C20AFF0014C654 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156B5D026C20AFF0014C654 /* CharacterModel.swift */; };
 		3156B5D326C20B0A0014C654 /* EpisodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156B5D226C20B0A0014C654 /* EpisodeModel.swift */; };
+		3156B5D526C20C620014C654 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156B5D426C20C620014C654 /* CharacterViewModel.swift */; };
+		3156B5D726C20C6E0014C654 /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156B5D626C20C6E0014C654 /* EpisodeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		3156B5CE26C209590014C654 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3156B5D026C20AFF0014C654 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		3156B5D226C20B0A0014C654 /* EpisodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeModel.swift; sourceTree = "<group>"; };
+		3156B5D426C20C620014C654 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		3156B5D626C20C6E0014C654 /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		3156B5CB26C208BE0014C654 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				3156B5D426C20C620014C654 /* CharacterViewModel.swift */,
+				3156B5D626C20C6E0014C654 /* EpisodeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -175,10 +181,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3156B5BD26C208040014C654 /* CharacterView.swift in Sources */,
+				3156B5D526C20C620014C654 /* CharacterViewModel.swift in Sources */,
 				3156B5D126C20AFF0014C654 /* CharacterModel.swift in Sources */,
 				3156B5CF26C209590014C654 /* MainView.swift in Sources */,
 				3156B5CD26C2091B0014C654 /* EpisodeView.swift in Sources */,
 				3156B5BB26C208040014C654 /* BreakingBadApp.swift in Sources */,
+				3156B5D726C20C6E0014C654 /* EpisodeViewModel.swift in Sources */,
 				3156B5D326C20B0A0014C654 /* EpisodeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
