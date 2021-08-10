@@ -6,17 +6,35 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct CharacterView: View {
     @ObservedObject var characterViewModel = CharacterViewModel()
+    var columns = [
+        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 15),
+        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 15),
+        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 15)
+    ]
     var body: some View {
-        List {
-            ForEach(characterViewModel.characters){ character in
-                Text("\(character.id)")
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: columns, content: {
+                    ForEach(characterViewModel.characters){ character in
+                        VStack {
+                            WebImage(url: character.img)
+                                .resizable()
+                                .indicator(.activity)
+                                .aspectRatio(contentMode: .fit)
+                                .frame(height: 200)
+                            Text(character.name)
+                        }
+                    }
+                })
+                .onAppear(){
+                    characterViewModel.fetchCharacters()
+                }
             }
-        }
-        .onAppear(){
-            characterViewModel.fetchCharacters()
+            .navigationTitle("Characters")
         }
     }
 }
