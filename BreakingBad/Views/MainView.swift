@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    init() {
+        UITabBar.appearance().backgroundColor = .black
+    }
+    
     var body: some View {
         TabView {
             CharacterView()

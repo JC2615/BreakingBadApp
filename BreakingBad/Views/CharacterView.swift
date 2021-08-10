@@ -15,6 +15,11 @@ struct CharacterView: View {
         GridItem(.flexible(minimum: 100, maximum: 200), spacing: 15),
         GridItem(.flexible(minimum: 100, maximum: 200), spacing: 15)
     ]
+    
+    init() {
+        UIScrollView.appearance().backgroundColor = .black
+    }
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -38,7 +43,6 @@ struct CharacterView: View {
                     characterViewModel.fetchCharacters()
                 }
             }
-            .padding()
             .navigationTitle("Characters")
         }
     }
