@@ -10,8 +10,14 @@ import SwiftUI
 struct CharacterView: View {
     @ObservedObject var characterViewModel = CharacterViewModel()
     var body: some View {
-        Text("Characters")
-            .padding()
+        List {
+            ForEach(characterViewModel.characters){ character in
+                Text("\(character.id)")
+            }
+        }
+        .onAppear(){
+            characterViewModel.fetchCharacters()
+        }
     }
 }
 
