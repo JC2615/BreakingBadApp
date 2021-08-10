@@ -18,6 +18,7 @@
 		3156B5D526C20C620014C654 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156B5D426C20C620014C654 /* CharacterViewModel.swift */; };
 		3156B5D726C20C6E0014C654 /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156B5D626C20C6E0014C654 /* EpisodeViewModel.swift */; };
 		3156B5DA26C21CF10014C654 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3156B5D926C21CF10014C654 /* SDWebImageSwiftUI */; };
+		3156B5DC26C2F86A0014C654 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156B5DB26C2F86A0014C654 /* CharacterDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		3156B5D226C20B0A0014C654 /* EpisodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeModel.swift; sourceTree = "<group>"; };
 		3156B5D426C20C620014C654 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		3156B5D626C20C6E0014C654 /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
+		3156B5DB26C2F86A0014C654 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3156B5BC26C208040014C654 /* CharacterView.swift */,
 				3156B5CC26C2091B0014C654 /* EpisodeView.swift */,
 				3156B5CE26C209590014C654 /* MainView.swift */,
+				3156B5DB26C2F86A0014C654 /* CharacterDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3156B5DC26C2F86A0014C654 /* CharacterDetailView.swift in Sources */,
 				3156B5BD26C208040014C654 /* CharacterView.swift in Sources */,
 				3156B5D526C20C620014C654 /* CharacterViewModel.swift in Sources */,
 				3156B5D126C20AFF0014C654 /* CharacterModel.swift in Sources */,

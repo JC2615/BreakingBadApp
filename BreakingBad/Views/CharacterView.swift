@@ -20,14 +20,18 @@ struct CharacterView: View {
             ScrollView {
                 LazyVGrid(columns: columns, content: {
                     ForEach(characterViewModel.characters){ character in
-                        VStack {
-                            WebImage(url: character.img)
-                                .resizable()
-                                .indicator(.activity)
-                                .aspectRatio(contentMode: .fit)
-                                .cornerRadius(5.0)
-                            Text(character.nickname)
-                        }
+                        NavigationLink(
+                            destination: Text("Hey"),
+                            label: {
+                                VStack {
+                                    WebImage(url: character.img)
+                                        .resizable()
+                                        .indicator(.activity)
+                                        .aspectRatio(contentMode: .fit)
+                                        .cornerRadius(5.0)
+                                    Text(character.nickname)
+                                }
+                            })
                     }
                 })
                 .onAppear(){
